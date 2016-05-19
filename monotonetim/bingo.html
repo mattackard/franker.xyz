@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/topNav.css">
+    <link rel="stylesheet" href="../css/bingo.css">
+		<title>MonotoneTim Bingo</title>
+	</head>
+	<body>
+    <nav>
+      <ul id="topNav">
+        <li><a href="../index">Home</a></li>
+        <li><a href="../tim">MonotoneTim</a></li>
+      </ul>
+    </nav>
+		<h1>MonotoneTim Bingo</h1>
+		<div id="container">
+			<div id="infoCol">
+				<h2>About Monotone Bingo</h2>
+				<p>This is a bingo board for MonotoneTim's stream: <a href="https://twitch.tv/MonotoneTim" target="_blank">twitch.tv/MonotoneTim</a></p>
+				<p>Also makes a good drinking game!</p>
+				<p>Each card is generated randomly. Click the button for a new board.</p>
+				<h2>Rules and Info</h2>
+				<p>No tiles are specific to a certain game.</p>
+				<p>Quotes don't have to be exact.</p>
+				<p>Hold on screens don't count as references.</p>
+				<p>Some reference keywords for people not familiar with them:</p>
+				<p>Ace Attorney: Objection, court record, Mia/Maya Fey, Edgeworth, attorney's badge</p>
+				<p>Sonic: Pumpkin Hill, Space Colony ARK, chaos/master emeralds, "I'll make you eat those words", Pingas</p>
+				<p>Persona: Social link, (reach out to the) truth, Chie, Yosuke, shadow world</p>
+			</div>
+			<div id="cardBack">
+			  <ul id="cardList">
+			  	<h1>No Javascript? No bingo!</h1>
+			    <!-- card list items are appended here through jQuery -->
+			  </ul>
+        <!-- button appended here through jQuery-->
+			</div>
+		</div>
+		<footer id="credits">
+			<p>Board cards and info panel stolen from Penguino's bingo board</p>
+		</footer>
+		<script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+		<script src="../js/bingo.js"></script>
+	</body>
+</html>
