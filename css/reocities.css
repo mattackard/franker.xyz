@@ -1,0 +1,58 @@
+
+
+body {
+  background-image: url(http://dl.glitter-graphics.com/pub/519/519821po41a2leng.gif);
+  background-repeat: repeat;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#submit {
+  color: black;
+}
+
+select {
+  color: black;
+  font-size: .7em;
+}
+
+#container {
+  text-align: center;
+  font-size: 1.5em;
+  width: 80%;
+  margin: 2em auto 0;
+}
+
+#topNav {
+  border-bottom: 2px solid gray;
+  font-family: "courier";
+  width: 90%;
+}
+
+#cornerGraphic {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  width: 100px;
+}
+
+#graphics {
+  text-align: center;
+}
+
+#graphics img {
+  padding: 1em 4em;
+}
+
+#brock {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .2;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+}

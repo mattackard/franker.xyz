@@ -1,0 +1,31 @@
+add more apps!
+
+pie
+  streambig
+    overlay png/gif on embedded stream for streambig, streamsmall, cheatbig, streampig
+      check if stream is live first
+      allow for selection depending on the layout being used -- runescape/mariomaker/normal layout
+      https://github.com/justintv/Twitch-API/blob/master/embed-video.md
+      
+  wanna double your coins slots?
+
+tim
+  bingo
+    add suggestion button for cards to add/remove
+      open modal with a text area
+      save user input to text file?
+  
+  build reocities randomizer for tim
+    style page
+    add more json directories
+    
+  sonic OC maker
+    sonic dress up game essentially
+      generate a backstory?
+  
+  midi instrument editor
+    replace all instruments with mp3
+    replace random instruments with mp3
+    preset meme instruments
+    grab midi link
+      from http or upload?

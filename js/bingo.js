@@ -1,75 +1,17 @@
 
-var cardArray = [			//list of possible bingo cards. add cards anywhere in the list
-	"PICNIC",
-	"MS Paint Diagram",
-	"MIDIs",
-	"'OK Google'",
-	"'Legitimately'",
-	"'Butts'",
-	"'I'll take it!'",
-	"Tim hasn't seen a movie",
-	"Game crash",
-	"Mr.Bones",
-	"Bingo plug",
-	"Steven Reed/Weber Cooks",
-	"New Jersey",
-	"Cholera",
-	"Tim pronounces a word weird",
-	"Sonic the Hedgehog reference",
-	"'One day' or 'One of these days'",
-	"'Cyberbullying'",
-	"Poo",
-	"'This changes everything!'",
-	"'Eh, it happens'",
-	"Baltimore",
-	"Booru plug",
-	"Tim complains about grad school",
-	"Tim mimics a character",
-	"'I paid money for this.'",
-	"Amazon",
-	"Persona reference",
-	"Ace Attourney reference",
-	"'I'm sorry, what!?'",
-	"Tim refers to himself as a girl",
-	"Weed and/or Snoop Dogg",
-	"Messing around with Xsplit",
-	"'They probably deserved it.'",
-	"Police sirens in the background",
-	"Showing off old saves",
-	"Bad ending / Game Over",
-	"Out of money",
-	"Strawpoll",
-	"'Oh Jesus Christ!'",
-	"Coffee/tea",
-	"Obama",
-	"Closer to the microphone",
-	"'Oh man, could you imagine?'",
-	"Novelty numbers: 420, 69, or 666",
-	"Grandfather clocks",
-	"Barf noise",
-	"Geocities (or Reocities)",
-	"'Ha ha ugh kill me'",
-	"'I have an idea...'",
-	"Thomas the Tank Engine",
-	"'Deflated baby'",
-	"'That rounds up/down'",
-	"London",
-	"Tim reads Japanese",
-	"WikiHow",
-	"Asia Old Man",
-	"Donald Trump",
-	"'This changes everything!'",
-	"Anime",
-	"Hold On screen",
-  "Windows virtual machine",
-  "Tim makes a post to twitter"
-];
-
 var freeSpace = "Free Space!";
 var $newCard = $("<button>New Board</button>");
 var cardColor;
 var firstBuild = true;
+var cardArray;
 
+$.ajaxSetup({async: false});
+
+$.getJSON("../js/json/bingoCards.json", function(data) {
+  cardArray = data;
+  console.log("got json");
+});
+console.log(cardArray);
 
 // builds 25 cards for the bingo board with randomly chosen text inside. on first run the
 //function will create 25 empty list items. for subsequent calls it will only empty the already
