@@ -7,7 +7,7 @@ body {
   font-family: 'Permanent Marker', cursive;
 }
 
-#submit {
+button {
   color: black;
 }
 
@@ -42,7 +42,13 @@ select {
 }
 
 #graphics img {
-  padding: 1em 4em;
+  padding: 1em 6em;
+}
+
+#reagan {
+  position: absolute;
+  top: 40%;
+  left: 10%;
 }
 
 #brock {
