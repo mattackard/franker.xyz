@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='css/mweep.css' type="text/css" charset="utf-8" />
+</head>
+<body>
+  <div id='titleScreen'>
+    <input type='text' placeholder="Enter your name">
+    <button id='startGame'>Play</button>
+  </div>
+  <div id='modal'>
+    <p id='itemName'></p>
+    <img src='#'>
+    <p id='itemDescription'></p>
+  </div>
+  <div id='textBox'>
+    <p></p>
+  </div>
+  <video id="video-forward">
+  	<source src="media/mweep_forward.mp4" type="video/mp4">
+    <source src="media/mweep_forward.webm" type="video/webm">
+  </video>
+  <video id="video-reverse">
+  	<source src="media/mweep_reverse.mp4" type="video/mp4">
+    <source src="media/mweep_reverse.webm" type="video/webm">
+  </video>
+  <audio id='bgMusic' loop>
+    <source src="media/Zoras_Domain.mp3" type="audio/mpeg">
+  </audio>
+  <audio id='fanfare'>
+    <source src="media/OOT_Fanfare_Item.wav" type="audio/wav">
+  </audio>
+  <div id="inventoryUI">
+
+  </div>
+  <img id="winner" src="media/winner.png">
+  <button id="inventoryButton">Inventory</button>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src='js/typed.min.js'></script>
+  <script src='js/items.js'></script>
+  <script src='js/mweep.js'></script>
+</body>

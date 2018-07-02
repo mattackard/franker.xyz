@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'Ocarina';
+  src: url('../media/fonts/Ocarina.eot');
+  src: url('../media/fonts/Ocarina.eot?#iefix') format('embedded-opentype'),
+  url('../media/fonts/Ocarina.woff') format('woff'),
+  url('../media/fonts/Ocarina.woff2') format('woff2'),
+  url('../media/fonts/Ocarina.ttf') format('truetype'),
+  url('../media/fonts/Ocarina.svg#Ocarina') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Ocarina', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+#titleScreen {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 20;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+#titleScreen input, #titleScreen button {
+  margin-top: 20%;
+  height: 2em;
+  font-size: 2em;
+}
+
+#titleScreen input {
+  padding-left: .4em;
+}
+
+#titleScreen button {
+  background-color: blue;
+  color: white;
+  border: none;
+  width: 4em;
+}
+
+video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal {
+  background-color: rgba(0,0,0,.6);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  width: 50%;
+  height: 60%;
+  top: 5%;
+  left: 25%;
+  z-index: 5;
+  border-radius: 7em;
+}
+
+#itemName {
+  padding: 0 1em;
+  font-size: 2em;
+}
+
+#itemDescription {
+  padding: 0 1em;
+  font-size: 1.6em;
+}
+
+#modal img {
+  height: 256px;
+  width: 256px;
+}
+
+#textBox {
+  background-color: rgba(0,0,0,.6);
+  position: absolute;
+  width: 60%;
+  height: 25%;
+  top: 70%;
+  left: 20%;
+  z-index: 3;
+  border-radius: 1em;
+  color: white;
+  font-size: 2em;
+  padding: 1em;
+}
+
+#textBox p {
+  padding: 0 1em;
+}
+
+#inventoryButton {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  width: 10em;
+  height: 2em;
+  font-size: 2em;
+  background-color: blue;
+  border: none;
+  opacity: 1;
+  z-index: 3;
+  color: white;
+  border-radius: 0.5em;
+}
+
+#inventoryButton:hover {
+  opacity: 0.7;
+}
+
+#inventoryUI {
+  position: absolute;
+  top: 5%;
+  right: 1em;
+  width: 18%;
+  background-color: rgba(0,0,0,.6);
+  z-index: 400;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.inventoryItem {
+  opacity: 0.15;
+  width: 42px;
+  height: 42px;
+  margin: 2px;
+
+}
+
+#winner {
+  position: relative;
+  text-align: center;
+  height: 80vh;
+  margin: 10vh 30%;
+  z-index: 3;
+  display: none;
+}
